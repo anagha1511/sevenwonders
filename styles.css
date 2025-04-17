@@ -1,0 +1,217 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: url('https://assets.onecompiler.app/43dbmphpd/43db823vq/won.jpg') no-repeat center center; 
+    background-size: cover; 
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffcc00; 
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: url('won.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 80px;
+}
+
+/* Heading */
+.main-content h1 {
+    font-size: 36px; 
+    font-weight: bold;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    margin-top: 20px;
+    padding: 15px 35px;
+    font-size: 22px;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-family: 'Boldonse', sans-serif; 
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: rgba(0, 86, 179, 0.9);
+    transform: scale(1.05);
+}
+
+/* ======= Gallery Styles ======= */
+.gallery {
+    margin: 140px auto 50px; 
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px; 
+    position: relative;
+    z-index: 1;
+}
+
+.gallery h1 {
+    font-size: 28px; 
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Grid Layout */
+.wonder-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images in the first row */
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto; 
+}
+
+/* Wonder Items */
+.wonder-item {
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    height: 190px; /* Reduced size */
+    width: 100%;
+}
+
+/* Landscape Images */
+.wonder-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Under Each Image */
+.wonder-item p {
+    padding: 8px;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Hover Effect */
+.wonder-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Second Row: 3 Images with Center Alignment */
+.wonder-grid:nth-of-type(1) {
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.wonder-grid:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images in the second row */
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: #000; 
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
