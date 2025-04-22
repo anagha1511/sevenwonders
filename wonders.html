@@ -18,7 +18,6 @@
     </nav>
   </header>
 
-  <!-- Gallery Section -->
   <section class="gallery">
     <h1>The Seven Wonders of the World</h1>
     <div class="wonder-grid">
@@ -53,7 +52,6 @@
     </div>
   </section>
 
-  <!-- Modal for Descriptions -->
   <div id="wonder-modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeWonder()">&times;</span>
@@ -61,8 +59,7 @@
       <p id="wonder-description"></p>
     </div>
   </div>
-
-  <!-- JavaScript for Modal Functionality -->
+  
   <script>
     const wonders = {
       "great-wall": {
@@ -71,19 +68,19 @@
       },
       "petra": {
         title: "Petra",
-        description: "Petra is an archaeological city in Jordan, famous for its rock-cut architecture and water conduit system.Petra is an ancient city carved into Jordan's sandstone cliffs, renowned as one of the New Seven Wonders of the World and a UNESCO World Heritage Site. This stunning archaeological site features impressive rock-cut architecture, intricate water conduit systems, and a rich history as the former capital of the Nabataean Kingdom. Iconic structures like the Treasury (Al-Khazneh) and the Monastery (Al-Deir) showcase the ingenuity and craftsmanship of the ancient Nabataeans, blending Greek, Roman, and Middle Eastern architectural styles. For travelers, the best time to visit Petra is from October to November or March to April, when the weather is mild and ideal for exploring this ancient wonder.
+        description: "Petra, the ancient city in Jordan, is a UNESCO World Heritage Site and one of the New 7 Wonders of the World. Established in the 6th century BC by the Nabataeans, Petra was a major center for trade, commerce, and culture, featuring rock-cut architecture, intricate facades, and statues. The city's impressive water system, which included pipes, channels, and cisterns, allowed it to thrive in the desert environment. Abandoned and hidden for centuries, Petra was rediscovered in 1812 and is now one of Jordan's most popular tourist attractions, with iconic landmarks like Al-Khazneh (The Treasury) and Ad Deir (The Monastery). Petra's history is a fascinating blend of Greek, Roman, and Middle Eastern influences, reflecting its strategic location at the crossroads of ancient trade routes. The city's ruins are a testament to the ingenuity and craftsmanship of the Nabataeans, who carved their buildings, temples, and tombs directly into the sandstone cliffs. Visitors to Petra can explore the narrow canyon known as the Siq, which serves as the main entrance to the city, and marvel at the stunning vistas and ancient ruins that surround them."
       },
       "cristo": {
         title: "Christ the Redeemer",
-        description: "The Christ the Redeemer statue is a monumental Art Deco sculpture of Jesus Christ, a globally recognized symbol of both Christianity and Brazil. Perched dramatically atop the 700-meter (2,300 ft) Corcovado Mountain in Rio de Janeiro's Tijuca Forest National Park, it offers a breathtaking panoramic view of the city, including Sugarloaf Mountain, Copacabana and Ipanema beaches, and Guanabara Bay. Artistic Style: The statue's design, attributed to Brazilian engineer Heitor da Silva Costa and Polish-French sculptor Paul Landowski, exemplifies the Art Deco style, characterized by its geometric shapes and stylized forms. The outstretched arms, a key feature, create a cross-like silhouette, symbolizing peace and welcome. Material and Construction: Constructed between 1922 and 1931, the statue is made of reinforced concrete, chosen for its strength and durability, and clad in thousands of small triangular soapstone tiles. These tiles give the statue its distinctive mosaic-like appearance and ensure its resistance to the elements. Dimensions and Proportions: The statue stands 30 meters (98 feet) tall, not including its 8-meter (26-foot) pedestal. The outstretched arms span 28 meters (92 feet), creating a wide and embracing gesture. The head alone weighs approximately 30 metric tons. Cultural and Religious Significance: Beyond its artistic merit, Christ the Redeemer holds deep religious significance for Brazilians, particularly Catholics. It serves as a powerful symbol of faith and devotion. Its location and pose also convey a sense of protection and blessing over the city. Global Recognition: Designated one of the New Seven Wonders of the World in 2007, Christ the Redeemer's image is instantly recognizable worldwide, solidifying its status as a cultural icon and a testament to human artistic achievement."
+        description: "The Christ the Redeemer statue is a monumental Art Deco sculpture of Jesus Christ, a globally recognized symbol of both Christianity and Brazil. Perched dramatically atop the 700-meter (2,300 ft) Corcovado Mountain in Rio de Janeiro's Tijuca Forest National Park, it offers a breathtaking panoramic view of the city, including Sugarloaf Mountain, Copacabana and Ipanema beaches, and Guanabara Bay. Artistic Style: The statue's design, attributed to Brazilian engineer Heitor da Silva Costa and Polish-French sculptor Paul Landowski, exemplifies the Art Deco style, characterized by its geometric shapes and stylized forms. The outstretched arms, a key feature, create a cross-like silhouette, symbolizing peace and welcome. Constructed between 1922 and 1931. Cultural and Religious Significance: Beyond its artistic merit, Christ the Redeemer holds deep religious significance for Brazilians, particularly Catholics. It serves as a powerful symbol of faith and devotion. Its location and pose also convey a sense of protection and blessing over the city. Global Recognition: Designated one of the New Seven Wonders of the World in 2007, Christ the Redeemer's image is instantly recognizable worldwide, solidifying its status as a cultural icon and a testament to human artistic achievement."
       },
       "machu-picchu": {
         title: "Machu Picchu",
-        description: "An ancient Incan city located in the Andes Mountains of Peru, known for its sophisticated dry-stone construction."
+        description: "Machu Picchu, the iconic 15th-century Inca citadel, is a UNESCO World Heritage site located in the Andes Mountains of Peru, known for its stunning architecture, engineering, and strategic location, and often referred to as the Lost City of the Incas. Situated in the Eastern Cordillera of southern Peru, on a mountain ridge at 2,430 meters (7,970 ft) above sea level. Inca Citadel: Built in the mid-15th century, during the reign of Emperor Pachacuti, it served as a royal retreat or ceremonial center. Lost City of the Incas: Often referred to as the Lost City of the Incas. The site was rediscovered in 1911 by Hiram Bingham. UNESCO World Heritage Site: Declared a UNESCO World Heritage Site in 1983. One of the New Seven Wonders of the World: Designated as one of the New Seven Wonders of the World in 2007. Key Features and Structures: Architecture: Known for its sophisticated dry-stone construction that blends seamlessly with the landscape. Engineering: Demonstrates the Inca's advanced engineering skills, including earthquake-resistant buildings and a complex water system.  Mysteries: The site still holds many mysteries and unanswered questions about its purpose and inhabitants. Historical Significance: A window into the Inca civilization and its engineering marvels."
       },
       "chichen-itza": {
         title: "Chichen Itza",
-        description: "A large pre-Columbian archaeological site in Mexico, featuring the iconic El Castillo pyramid."
+        description: "Chichen Itza, located on the Yucatan Peninsula in Mexico, is one of the most fascinating and mysterious sites in the ancient world. This pre-Columbian Mayan city was built by the Itza civilization in the 10th century AD and is dominated by the majestic Pyramid of Kukulkan, also known as El Castillo. This 30-meter-high pyramid is a masterpiece of Mayan architecture and is famous for the phenomenon of the descent of the serpent,where a shadow in the shape of a serpent appears on the stairs during the spring and fall equinoxes. As one of the New 7 Wonders of the World and a UNESCO World Heritage Site, Chichen Itza attracts millions of visitors each year. The site is a treasure trove of Mayan ruins, including the Temple of Warriors, the Ball Court, and the Sacred Cenote. Visitors can explore the ancient streets, temples, and pyramids, and learn about the history, mythology, and culture of the Mayan civilization. With its rich history, stunning architecture, and mystical atmosphere, Chichen Itza is an unforgettable destination that inspires wonder and awe in all who visit."
       },
       "roman-colosseum": {
         title: "Roman Colosseum",
